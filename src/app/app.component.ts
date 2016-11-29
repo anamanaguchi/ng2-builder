@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser'
 
 import { SectionComponent } from './section/section.component';
 import { InputComponent } from './input/input.component';
-
+import { AppConfigService } from './shared/app-config.service';
 import { DynamicPlaceholderDirective } from './dynamic-placeholder.directive';
 
 @Component({
@@ -15,8 +15,21 @@ import { DynamicPlaceholderDirective } from './dynamic-placeholder.directive';
 export class AppComponent {
 	@ViewChild(DynamicPlaceholderDirective) dynamicPlaceholder: DynamicPlaceholderDirective;
 
+    constructor(
+        private _appConfigService: AppConfigService) {
+        
+    }
+
+    getElements() {
+        this._appConfigService.getElements().subscribe(
+            data => { console.log(data)},
+            err => {}
+        );
+    }
+
     ngOnInit() {
- 		
+        let jsonElements = this.getElements();
+        console.log(jsonElements);
     	let allElements = [
     		{
     			elementType: InputComponent,
@@ -50,5 +63,5 @@ export class AppComponent {
     	    }
     	];
         this.dynamicPlaceholder.createDynamicComponents(allElements);
-    }
+    } 
 }

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { SectionComponent } from './section/section.component';
 import { DynamicPlaceholderDirective } from './dynamic-placeholder.directive';
 import { InputComponent } from './input/input.component';
+import { AppConfigService } from './shared/app-config.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { InputComponent } from './input/input.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [AppConfigService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
