@@ -10,6 +10,7 @@ export class DynamicPlaceholderDirective {
     ){}
 
   createComponent(component){
+
     let componentFactory = this.componentFactoryResolver.resolveComponentFactory(component.elementType);
     let componentRef = this.viewContainer.createComponent(componentFactory);
     componentRef.instance['attributes'] = component.attributes;

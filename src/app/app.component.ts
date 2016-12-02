@@ -16,52 +16,21 @@ export class AppComponent {
 	@ViewChild(DynamicPlaceholderDirective) dynamicPlaceholder: DynamicPlaceholderDirective;
 
     constructor(
-        private _appConfigService: AppConfigService) {
-        
-    }
+        private _appConfigService: AppConfigService) {}
 
     getElements() {
-        this._appConfigService.getElements().subscribe(
-            data => { console.log(data)},
+        this._appConfigService.getConfigFile().subscribe(
+            data => { 
+                let elements = this._appConfigService.getElements(data);
+                if(elements){
+                    this.dynamicPlaceholder.createDynamicComponents(elements);
+                }
+            },
             err => {}
         );
     }
 
     ngOnInit() {
-        let jsonElements = this.getElements();
-        console.log(jsonElements);
-    	let allElements = [
-    		{
-    			elementType: InputComponent,
-    			attributes: {
-    				class: ['col12', 'ui-input'],
-    				name: 'say-hello',
-    				id: 'say-hello',
-    				placeholder: 'Say hello',
-    				label: 'Please say hello'
-    			}
-    		},
-    		{
-    			elementType: SectionComponent,
-    			attributes: {
-    				class: ['col12', 'ui-section'],
-    				name: 'Personal info section',
-    				id: 'personal-info',
-    				label: 'Please enter your personal informations',
-    				elements: [
-    				{
-		    			elementType: InputComponent,
-		    			attributes: {
-		    				class: ['col12', 'ui-input'],
-		    				name: 'first-name',
-		    				id: 'first-name',
-		    				placeholder: 'First name',
-		    				label: 'Please enter your first name'
-		    			}
-		    		}]
-    		    }
-    	    }
-    	];
-        this.dynamicPlaceholder.createDynamicComponents(allElements);
+        this.getElements();
     } 
 }

@@ -1,6 +1,7 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {DynamicPlaceholderDirective} from '../dynamic-placeholder.directive';
+import { AppConfigService } from '../shared/app-config.service';
 
 @Component({
 	selector: 'ui-section',
@@ -8,13 +9,21 @@ import {DynamicPlaceholderDirective} from '../dynamic-placeholder.directive';
 	styleUrls: ['./section.component.scss']
 })
 export class SectionComponent implements OnInit {
+	
 	@ViewChild(DynamicPlaceholderDirective) dynamicPlaceholder: DynamicPlaceholderDirective;
-  	constructor() { }
+  	
+  	constructor(
+        private _appConfigService: AppConfigService) {}
 
 	ngOnInit() {
-		if(this['attributes'] && this['attributes']['elements']){
-			console.log("ive got kids!",this['attributes']['elements']);
-  			this.dynamicPlaceholder.createDynamicComponents(this['attributes']['elements']);
+		let attributes = this['attributes'];
+
+		
+		if(attributes && attributes.elements){
+			let elements = this._appConfigService.getElements(attributes);
+			if(elements){
+  				this.dynamicPlaceholder.createDynamicComponents(elements);
+  			}
   		}
   	}
 }
