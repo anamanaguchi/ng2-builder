@@ -19,7 +19,8 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "sass/styles.scss"
+        "sass/styles.scss",
+							"../node_modules/material-design-lite/material.min.css"
       ],
       "scripts": [
       ],
