@@ -24,7 +24,7 @@
         ],
         "name": "Personal info section",
         "id": "personal-info",
-        "label": "Please enter your personal informations",
+        "label": "Please enter your personal informations! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt laboriosam amet maxime iusto nam facilis possimus quo optio? Dolor, et?",
         "elements": [
           {
             "elementType": "InputComponent",

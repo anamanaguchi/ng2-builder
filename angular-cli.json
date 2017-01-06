@@ -19,10 +19,11 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "sass/styles.scss",
-							"../node_modules/material-design-lite/material.min.css"
+							"../node_modules/material-design-lite/material.min.css",
+        "sass/styles.scss"
       ],
       "scripts": [
+							"../node_modules/material-design-lite/dist/material.min.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
