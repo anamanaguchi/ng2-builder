@@ -1,46 +1,73 @@
 {
-  "appName": "ng2-builder",
-  "lang": "en_EN",
-  "elements": [
-    {
-      "elementType": "InputComponent",
-      "attributes": {
-        "class": [
-          "col12",
-          "ui-input"
-        ],
-        "name": "say-hello",
-        "id": "say-hello",
-        "placeholder": "Say hello",
-        "label": "Please say hello"
-      }
-    },
-    {
-      "elementType": "SectionComponent",
-      "attributes": {
-        "class": [
-          "col12",
-          "ui-section"
-        ],
-        "name": "Personal info section",
-        "id": "personal-info",
-        "label": "Please enter your personal informations! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt laboriosam amet maxime iusto nam facilis possimus quo optio? Dolor, et?",
-        "elements": [
-          {
-            "elementType": "InputComponent",
-            "attributes": {
-              "class": [
-                "col12",
-                "ui-input"
-              ],
-              "name": "first-name",
-              "id": "first-name",
-              "placeholder": "First name",
-              "label": "Please enter your first name"
-            }
-          }
-        ]
-      }
-    }
-  ]
+	"appName": "ng2-builder",
+	"lang": "en_EN",
+	"elements": [
+		{
+			"elementType": "InputComponent",
+			"attributes": {
+				"class": [
+					"col12",
+					"ui-input"
+				],
+				"name": "say-hello",
+				"id": "say-hello",
+				"placeholder": "Say hello",
+				"label": "Please say hello",
+			}
+		},
+		{
+			"elementType": "SectionComponent",
+			"attributes": {
+				"class": [
+					"col12",
+					"ui-section"
+				],
+				"name": "Personal info section",
+				"id": "personal-info",
+				"label": "Please enter your personal informations! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt laboriosam amet maxime iusto nam facilis possimus quo optio? Dolor, et?",
+				"elements": [
+					{
+						"elementType": "InputComponent",
+						"attributes": {
+							"class": [
+								"col12",
+								"ui-input"
+							],
+							"name": "first-name",
+							"id": "first-name",
+							"placeholder": "First name",
+							"label": "Please enter your first name"
+						}
+					}
+				]
+			}
+		},
+		{
+			"elementType": "SectionComponent",
+			"attributes": {
+				"class": [
+					"col12",
+					"ui-section"
+				],
+				"name": "Personal info section",
+				"id": "personal-info",
+				"label": "Please enter your personal informations! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt laboriosam amet maxime iusto nam facilis possimus quo optio? Dolor, et?",
+				"elements": [
+					{
+						"elementType": "InputComponent",
+						"attributes": {
+							"class": [
+								"col12",
+								"ui-input"
+							],
+							"name": "first-name",
+							"id": "first-name",
+							"placeholder": "First name",
+							"label": "Please enter your first name"
+						}
+					}
+				]
+			}
+		}
+	]
 }
