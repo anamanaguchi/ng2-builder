@@ -14,4 +14,8 @@ export class InputComponent implements OnInit {
   ngOnInit() {
   }
 
+  showMeLog(object){
+  	console.log(object);
+  }
+
 }

@@ -29,6 +29,7 @@ export class AppComponent {
 				}
 			},
 			err => {
+				console.error('There is a problem with config file...')
 			}
 		);
 	}

@@ -6,13 +6,22 @@
 			"elementType": "InputComponent",
 			"attributes": {
 				"class": [
-					"col12",
 					"ui-input"
 				],
+				"width": {
+					"mobile": 12,
+					"tablet": 12,
+					"desktop": 12
+				},
 				"name": "say-hello",
 				"id": "say-hello",
+				"defaultValue": "",
 				"placeholder": "Say hello",
+				"pattern": "-?[0-9]*(\\.[0-9]+)?",
+				"pattern.error": "Please provide a number!",
 				"label": "Please say hello",
+				"required": true,
+				"required.error": "This field is required!"
 			}
 		},
 		{
@@ -22,6 +31,11 @@
 					"col12",
 					"ui-section"
 				],
+				"width": {
+					"mobile": 12,
+					"tablet": 12,
+					"desktop": 12
+				},
 				"name": "Personal info section",
 				"id": "personal-info",
 				"label": "Please enter your personal informations! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt laboriosam amet maxime iusto nam facilis possimus quo optio? Dolor, et?",
@@ -49,6 +63,11 @@
 					"col12",
 					"ui-section"
 				],
+				"width": {
+					"mobile": 12,
+					"tablet": 12,
+					"desktop": 12
+				},
 				"name": "Personal info section",
 				"id": "personal-info",
 				"label": "Please enter your personal informations! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt laboriosam amet maxime iusto nam facilis possimus quo optio? Dolor, et?",
