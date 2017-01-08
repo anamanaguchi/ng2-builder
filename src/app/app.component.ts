@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { SectionComponent } from './section/section.component';
 import { InputComponent } from './input/input.component';
 import { AppConfigService } from './shared/app-config.service';
+import { ElementService } from './shared/element.service';
 import { DynamicPlaceholderDirective } from './dynamic-placeholder.directive';
 
 declare let componentHandler:any;
@@ -17,13 +18,14 @@ declare let componentHandler:any;
 export class AppComponent {
 	@ViewChild(DynamicPlaceholderDirective) dynamicPlaceholder:DynamicPlaceholderDirective;
 
-	constructor(private _appConfigService:AppConfigService) {
-	}
+	constructor(
+		private _appConfigService:AppConfigService, 
+		private _elementService:ElementService) {}
 
 	getElements() {
 		this._appConfigService.getConfigFile().subscribe(
 			data => {
-				let elements = this._appConfigService.getElements(data);
+				let elements = this._elementService.getElements(data);
 				if (elements) {
 					this.dynamicPlaceholder.createDynamicComponents(elements);
 				}

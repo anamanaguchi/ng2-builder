@@ -1,9 +1,9 @@
 <!-- Simple Textfield -->
 
-<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" [ngClass]="getElementClass()">
 	<input 
-		class="mdl-textfield__input" 
-		type="text" 
+		class="mdl-textfield__input"
+		type="text"
 		[pattern]="attributes.validation?.pattern.value " 
 		[id]="attributes.id"
 		[placeholder]="attributes.placeholder"

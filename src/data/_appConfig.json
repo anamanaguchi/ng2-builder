@@ -9,9 +9,37 @@
 					"ui-input"
 				],
 				"width": {
-					"mobile": 12,
-					"tablet": 12,
-					"desktop": 12
+					"phone": 12,
+					"tablet": 8,
+					"desktop": 6
+				},
+				"name": "say-hello",
+				"id": "say-hello",
+				"defaultValue": "",
+				"placeholder": "Say hello",
+				"label": "Please say hello",
+				"validation":{
+					"pattern":{
+						"value": "-?[0-9]*(\\.[0-9]+)?",
+						"error": "Please provide a number!"
+					},
+					"required":{
+						"value": true,
+						"error": "This field is required!"
+					}
+				}
+			}
+		},
+				{
+			"elementType": "InputComponent",
+			"attributes": {
+				"class": [
+					"ui-input"
+				],
+				"width": {
+					"phone": 12,
+					"tablet": 8,
+					"desktop": 6
 				},
 				"name": "say-hello",
 				"id": "say-hello",
@@ -38,7 +66,7 @@
 					"ui-section"
 				],
 				"width": {
-					"mobile": 12,
+					"phone": 12,
 					"tablet": 12,
 					"desktop": 12
 				},
@@ -70,7 +98,7 @@
 					"ui-section"
 				],
 				"width": {
-					"mobile": 12,
+					"phone": 12,
 					"tablet": 12,
 					"desktop": 12
 				},

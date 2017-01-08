@@ -8,6 +8,8 @@ import { SectionComponent } from './section/section.component';
 import { DynamicPlaceholderDirective } from './dynamic-placeholder.directive';
 import { InputComponent } from './input/input.component';
 import { AppConfigService } from './shared/app-config.service';
+import { ElementHelpersService } from './shared/element-helpers.service';
+import { ElementService } from './shared/element.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,7 @@ import { AppConfigService } from './shared/app-config.service';
     FormsModule,
     HttpModule
   ],
-  providers: [AppConfigService],
+  providers: [AppConfigService, ElementService, ElementHelpersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
