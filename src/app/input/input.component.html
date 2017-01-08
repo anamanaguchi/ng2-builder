@@ -4,11 +4,11 @@
 	<input 
 		class="mdl-textfield__input" 
 		type="text" 
-		[pattern]="attributes.pattern" 
+		[pattern]="attributes.validation?.pattern.value " 
 		[id]="attributes.id"
 		[placeholder]="attributes.placeholder"
 		[name]="attributes.name"
-		[required]="attributes.required || null"
+		[required]="attributes.validation?.required.value || null"
 		[(ngModel)]="attributes.defaultValue"
        	#model="ngModel" 
        	/>
@@ -17,11 +17,11 @@
 
 	<div *ngIf="model.errors && (model.dirty || model.touched)">
 		<div [hidden]="!model.errors.required" class="error">
-			{{attributes.required.error}}
+			{{attributes.validation?.required.error}}
 	    </div>
 
 	    <div [hidden]="!model.errors.pattern" class="error">
-			{{attributes.pattern.error}}
+			{{attributes.validation?.pattern.error}}
 		</div>
 	</div>
 
