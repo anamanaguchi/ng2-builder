@@ -1,0 +1,27 @@
+<!-- Simple Textfield -->
+
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" [ngClass]="getElementClass()">
+	<textarea
+		class="mdl-textfield__input"
+		[id]="attributes.id"
+		[placeholder]="attributes.placeholder"
+		[name]="attributes.name"
+		[rows]="attributes.rows"
+		[required]="attributes.validation?.required.value || null"
+		[(ngModel)]="attributes.defaultValue"
+		#model="ngModel"
+	></textarea>
+
+	<label class="mdl-textfield__label">{{attributes.label}}</label>
+
+	<div *ngIf="model.errors && (model.dirty || model.touched)">
+		<div [hidden]="!model.errors.required" class="error">
+			{{attributes.validation?.required.error}}
+		</div>
+
+		<div [hidden]="!model.errors.pattern" class="error">
+			{{attributes.validation?.pattern.error}}
+		</div>
+	</div>
+
+</div>

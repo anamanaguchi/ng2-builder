@@ -1,0 +1,25 @@
+@import '../../sass/variables';
+
+//we need to overwirte error colors
+.mdl-textfield{
+	float: left;
+	.error{
+		color: $error-color;
+		position: absolute;
+		font-size: 12px;
+		margin-top: 3px;
+		display: block;
+	}
+	&.is-invalid{
+		.mdl-textfield__input {
+			border-color: $main-color;
+			box-shadow: none;
+		}
+		.mdl-textfield__label:after{
+			background-color: $main-color;
+		}
+		.mdl-textfield__label {
+			color: $main-color;
+		}
+	}
+}

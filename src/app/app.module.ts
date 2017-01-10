@@ -10,13 +10,15 @@ import { InputComponent } from './input/input.component';
 import { AppConfigService } from './shared/app-config.service';
 import { ElementHelpersService } from './shared/element-helpers.service';
 import { ElementService } from './shared/element.service';
+import { TextareaComponent } from './textarea/textarea.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SectionComponent,
     DynamicPlaceholderDirective,
-    InputComponent
+    InputComponent,
+    TextareaComponent
   ],
   imports: [
     BrowserModule,

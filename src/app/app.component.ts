@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser'
 
 import { SectionComponent } from './section/section.component';
 import { InputComponent } from './input/input.component';
+import { TextareaComponent } from './textarea/textarea.component';
+
 import { AppConfigService } from './shared/app-config.service';
 import { ElementService } from './shared/element.service';
 import { DynamicPlaceholderDirective } from './dynamic-placeholder.directive';
@@ -13,13 +15,13 @@ declare let componentHandler:any;
 	selector: 'ng2-builder',
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss'],
-	entryComponents: [SectionComponent, InputComponent]
+	entryComponents: [SectionComponent, InputComponent, TextareaComponent]
 })
 export class AppComponent {
 	@ViewChild(DynamicPlaceholderDirective) dynamicPlaceholder:DynamicPlaceholderDirective;
 
 	constructor(
-		private _appConfigService:AppConfigService, 
+		private _appConfigService:AppConfigService,
 		private _elementService:ElementService) {}
 
 	getElements() {

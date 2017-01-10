@@ -102,21 +102,31 @@
 					"tablet": 12,
 					"desktop": 12
 				},
-				"name": "Personal info section",
+				"name": "Message Section",
 				"id": "personal-info",
 				"label": "Please enter your personal informations! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt laboriosam amet maxime iusto nam facilis possimus quo optio? Dolor, et?",
 				"elements": [
 					{
-						"elementType": "InputComponent",
+						"elementType": "TextareaComponent",
 						"attributes": {
-							"class": [
-								"col12",
-								"ui-input"
-							],
-							"name": "first-name",
-							"id": "first-name",
-							"placeholder": "First name",
-							"label": "Please enter your first name"
+							"class": [],
+							"width": {
+								"phone": 12,
+								"tablet": 8,
+								"desktop": 12
+							},
+							"rows": 2,
+							"name": "msg",
+							"id": "msg",
+							"defaultValue": "",
+							"placeholder": "What's your problem?",
+							"label": "Please type the reason of contact",
+							"validation": {
+								"required": {
+									"value": true,
+									"error": "This field is required!"
+								}
+							}
 						}
 					}
 				]
