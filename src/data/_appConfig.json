@@ -18,19 +18,19 @@
 				"defaultValue": "",
 				"placeholder": "Say hello",
 				"label": "Please say hello",
-				"validation":{
-					"pattern":{
+				"validation": {
+					"pattern": {
 						"value": "-?[0-9]*(\\.[0-9]+)?",
 						"error": "Please provide a number!"
 					},
-					"required":{
+					"required": {
 						"value": true,
 						"error": "This field is required!"
 					}
 				}
 			}
 		},
-				{
+		{
 			"elementType": "InputComponent",
 			"attributes": {
 				"class": [
@@ -46,12 +46,12 @@
 				"defaultValue": "",
 				"placeholder": "Say hello",
 				"label": "Please say hello",
-				"validation":{
-					"pattern":{
+				"validation": {
+					"pattern": {
 						"value": "-?[0-9]*(\\.[0-9]+)?",
 						"error": "Please provide a number!"
 					},
-					"required":{
+					"required": {
 						"value": true,
 						"error": "This field is required!"
 					}

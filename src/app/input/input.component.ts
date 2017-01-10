@@ -4,24 +4,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ElementHelpersService } from '../shared/element-helpers.service';
 
 @Component({
-  selector: 'ui-input',
-  templateUrl: './input.component.html',
-  styleUrls: ['./input.component.scss']
+	selector: 'ui-input',
+	templateUrl: './input.component.html',
+	styleUrls: ['./input.component.scss']
 })
 export class InputComponent implements OnInit {
 
-  constructor(
- 	public _elementHelpersService:ElementHelpersService) {}
+	private attributes:any;
 
-  ngOnInit() {
-  }
+	constructor(public _elementHelpersService:ElementHelpersService) {
 
-  getElementClass(){
-  	return this._elementHelpersService.getElementClass(this.attributes);
-  }
+	}
 
-  showMeLog(object){
-  	console.log(object);
-  }	
+	ngOnInit() {
+	}
+
+	getElementClass() {
+
+		return this._elementHelpersService.getElementClass(this.attributes);
+
+	}
+
 
 }
