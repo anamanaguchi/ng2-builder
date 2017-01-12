@@ -5,7 +5,7 @@ import { ElementService } from '../shared/element.service';
 import { ElementHelpersService } from '../shared/element-helpers.service';
 
 @Component({
-	selector: 'ui-section',
+	selector: 'json-section',
 	templateUrl: './section.component.html',
 	styleUrls: ['./section.component.scss']
 })

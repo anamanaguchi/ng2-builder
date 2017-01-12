@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ElementHelpersService } from '../shared/element-helpers.service';
 
 @Component({
-  selector: 'ui-textarea',
+  selector: 'json-textarea',
   templateUrl: './textarea.component.html',
   styleUrls: ['./textarea.component.scss']
 })

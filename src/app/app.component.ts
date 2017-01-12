@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { SectionComponent } from './section/section.component';
 import { InputComponent } from './input/input.component';
 import { TextareaComponent } from './textarea/textarea.component';
+import { RadioComponent } from './radio/radio.component';
 
 import { AppConfigService } from './shared/app-config.service';
 import { ElementService } from './shared/element.service';
@@ -15,7 +16,7 @@ declare let componentHandler:any;
 	selector: 'ng2-builder',
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss'],
-	entryComponents: [SectionComponent, InputComponent, TextareaComponent]
+	entryComponents: [SectionComponent, InputComponent, TextareaComponent, RadioComponent]
 })
 export class AppComponent {
 	@ViewChild(DynamicPlaceholderDirective) dynamicPlaceholder:DynamicPlaceholderDirective;

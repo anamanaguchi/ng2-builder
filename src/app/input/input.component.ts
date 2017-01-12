@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ElementHelpersService } from '../shared/element-helpers.service';
 
 @Component({
-	selector: 'ui-input',
+	selector: 'json-input',
 	templateUrl: './input.component.html',
 	styleUrls: ['./input.component.scss']
 })

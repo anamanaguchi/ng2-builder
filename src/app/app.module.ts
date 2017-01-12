@@ -11,6 +11,7 @@ import { AppConfigService } from './shared/app-config.service';
 import { ElementHelpersService } from './shared/element-helpers.service';
 import { ElementService } from './shared/element.service';
 import { TextareaComponent } from './textarea/textarea.component';
+import { RadioComponent } from './radio/radio.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TextareaComponent } from './textarea/textarea.component';
     SectionComponent,
     DynamicPlaceholderDirective,
     InputComponent,
-    TextareaComponent
+    TextareaComponent,
+    RadioComponent
   ],
   imports: [
     BrowserModule,

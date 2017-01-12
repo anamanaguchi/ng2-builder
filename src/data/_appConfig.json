@@ -159,6 +159,53 @@
 					}
 				]
 			}
+		},
+		{
+			"elementType": "SectionComponent",
+			"attributes": {
+				"class": [
+					"mdl-card__supporting-text"
+				],
+				"wrapperClass": [
+					"section--center",
+					"mdl-grid",
+					"mdl-shadow--2dp",
+					"mdl-cell",
+					"mdl-cell--12-col"
+				],
+				"name": "Radio section",
+				"id": "radio-section",
+				"label": "Please, decide! Et, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt labori",
+				"elements": [
+					{
+						"elementType": "RadioComponent",
+						"attributes": {
+							"wrapperClass": [
+								"mdl-grid"
+							],
+							"name": "msg",
+							"id": "msg",
+							"options": [
+								{
+									"value": "value1",
+									"label": "Option1",
+									"class": ["mdl-radio__button"],
+									"labelClass": ["mdl-radio__label"],
+									"wrapperClass": ["mdl-radio", "mdl-js-radio", "mdl-js-ripple-effect", "mdl-cell", "mdl-cell--3-col"]
+								},
+								{
+									"value": "value2",
+									"label": "Option2",
+									"class": ["mdl-radio__button"],
+									"labelClass": ["mdl-radio__label"],
+									"wrapperClass": ["mdl-radio", "mdl-js-radio", "mdl-js-ripple-effect", "mdl-cell", "mdl-cell--3-col"],
+									"checked": true
+								}
+							]
+						}
+					}
+				]
+			}
 		}
 	]
 }

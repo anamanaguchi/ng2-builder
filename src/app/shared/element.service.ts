@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { SectionComponent } from '../section/section.component';
 import { InputComponent } from '../input/input.component';
 import { TextareaComponent } from '../textarea/textarea.component';
+import { RadioComponent } from '../radio/radio.component';
 
 @Injectable()
 export class ElementService {
@@ -10,7 +11,7 @@ export class ElementService {
 	private listOfComponents:any[];
 
 	constructor() {
-		this.listOfComponents = [SectionComponent, InputComponent, TextareaComponent]
+		this.listOfComponents = [SectionComponent, InputComponent, TextareaComponent, RadioComponent]
 	}
 
 	manageElementType(elementType:String) {
