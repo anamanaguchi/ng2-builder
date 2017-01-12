@@ -1,0 +1,8 @@
+<div [ngClass]="attributes.wrapperClass">
+
+	<label  *ngFor="let radio of attributes.options" [ngClass]="radio.wrapperClass" [for]="radio.value">
+		<input type="radio" [id]="radio.value" [ngClass]="radio.class" [name]="attributes.name" [checked]="radio.checked || null"/>
+		<span [ngClass]="radio.labelClass">{{radio.label}}</span>
+	</label>
+
+</div>
