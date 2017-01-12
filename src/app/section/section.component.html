@@ -1,6 +1,6 @@
-<section  class="section--center mdl-grid mdl-shadow--2dp" [ngClass]="getElementClass()">
+<section [ngClass]="attributes.wrapperClass">
 
-	<div class="mdl-card__supporting-text">
+	<div [ngClass]="attributes.class">
 		<h4>{{attributes.name}}</h4>
 		{{attributes.label}}
 		<section dynamicPlaceholder></section>

@@ -14,7 +14,7 @@ export class SectionComponent implements OnInit {
 	@ViewChild(DynamicPlaceholderDirective) dynamicPlaceholder:DynamicPlaceholderDirective;
 	private attributes:any;
 
-	constructor(private _elementService:ElementService, private _elementHelpersService:ElementHelpersService) {
+	constructor(private _elementService:ElementService) {
 	}
 
 	ngOnInit() {
@@ -26,9 +26,4 @@ export class SectionComponent implements OnInit {
 		}
 	}
 
-	getElementClass() {
-
-		return this._elementHelpersService.getElementClass(this.attributes);
-
-	}
 }

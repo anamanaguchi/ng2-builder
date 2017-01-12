@@ -6,13 +6,18 @@
 			"elementType": "InputComponent",
 			"attributes": {
 				"class": [
-					"ui-input"
+					"mdl-textfield__input"
 				],
-				"width": {
-					"phone": 12,
-					"tablet": 8,
-					"desktop": 6
-				},
+				"wrapperClass": [
+					"mdl-textfield",
+					"mdl-js-textfield",
+					"mdl-textfield--floating-label",
+					"mdl-cell",
+					"mdl-cell--12-col"
+				],
+				"labelClass": [
+					"mdl-textfield__label"
+				],
 				"name": "say-hello",
 				"id": "say-hello",
 				"defaultValue": "",
@@ -34,13 +39,18 @@
 			"elementType": "InputComponent",
 			"attributes": {
 				"class": [
-					"ui-input"
+					"mdl-textfield__input"
 				],
-				"width": {
-					"phone": 12,
-					"tablet": 8,
-					"desktop": 6
-				},
+				"wrapperClass": [
+					"mdl-textfield",
+					"mdl-js-textfield",
+					"mdl-textfield--floating-label",
+					"mdl-cell",
+					"mdl-cell--12-col"
+				],
+				"labelClass": [
+					"mdl-textfield__label"
+				],
 				"name": "say-hello",
 				"id": "say-hello",
 				"defaultValue": "",
@@ -62,14 +72,15 @@
 			"elementType": "SectionComponent",
 			"attributes": {
 				"class": [
-					"col12",
-					"ui-section"
+					"mdl-card__supporting-text"
 				],
-				"width": {
-					"phone": 12,
-					"tablet": 12,
-					"desktop": 12
-				},
+				"wrapperClass": [
+					"section--center",
+					"mdl-grid",
+					"mdl-shadow--2dp",
+					"mdl-cell",
+					"mdl-cell--12-col"
+				],
 				"name": "Personal info section",
 				"id": "personal-info",
 				"label": "Please enter your personal informations! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt laboriosam amet maxime iusto nam facilis possimus quo optio? Dolor, et?",
@@ -78,8 +89,17 @@
 						"elementType": "InputComponent",
 						"attributes": {
 							"class": [
-								"col12",
-								"ui-input"
+								"mdl-textfield__input"
+							],
+							"wrapperClass": [
+								"mdl-textfield",
+								"mdl-js-textfield",
+								"mdl-textfield--floating-label",
+								"mdl-cell",
+								"mdl-cell--12-col"
+							],
+							"labelClass": [
+								"mdl-textfield__label"
 							],
 							"name": "first-name",
 							"id": "first-name",
@@ -94,14 +114,15 @@
 			"elementType": "SectionComponent",
 			"attributes": {
 				"class": [
-					"col12",
-					"ui-section"
+					"mdl-card__supporting-text"
 				],
-				"width": {
-					"phone": 12,
-					"tablet": 12,
-					"desktop": 12
-				},
+				"wrapperClass": [
+					"section--center",
+					"mdl-grid",
+					"mdl-shadow--2dp",
+					"mdl-cell",
+					"mdl-cell--12-col"
+				],
 				"name": "Message Section",
 				"id": "personal-info",
 				"label": "Please enter your personal informations! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt laboriosam amet maxime iusto nam facilis possimus quo optio? Dolor, et?",
@@ -109,12 +130,19 @@
 					{
 						"elementType": "TextareaComponent",
 						"attributes": {
-							"class": [],
-							"width": {
-								"phone": 12,
-								"tablet": 8,
-								"desktop": 12
-							},
+							"class": [
+								"mdl-textfield__input"
+							],
+							"wrapperClass": [
+								"mdl-textfield",
+								"mdl-js-textfield",
+								"mdl-textfield--floating-label",
+								"mdl-cell",
+								"mdl-cell--12-col"
+							],
+							"labelClass": [
+								"mdl-textfield__label"
+							],
 							"rows": 2,
 							"name": "msg",
 							"id": "msg",

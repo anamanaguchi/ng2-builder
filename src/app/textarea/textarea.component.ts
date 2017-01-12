@@ -12,17 +12,12 @@ export class TextareaComponent implements OnInit {
 
 	private attributes:any;
 
-	constructor(public _elementHelpersService:ElementHelpersService) {
+	constructor() {
 
 	}
 
 	ngOnInit() {
 	}
 
-	getElementClass() {
-
-		return this._elementHelpersService.getElementClass(this.attributes);
-
-	}
 
 }
