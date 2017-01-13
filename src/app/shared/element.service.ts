@@ -4,6 +4,7 @@ import { SectionComponent } from '../section/section.component';
 import { InputComponent } from '../input/input.component';
 import { TextareaComponent } from '../textarea/textarea.component';
 import { RadioComponent } from '../radio/radio.component';
+import { CheckboxComponent } from '../checkbox/checkbox.component';
 
 @Injectable()
 export class ElementService {
@@ -11,7 +12,7 @@ export class ElementService {
 	private listOfComponents:any[];
 
 	constructor() {
-		this.listOfComponents = [SectionComponent, InputComponent, TextareaComponent, RadioComponent]
+		this.listOfComponents = [SectionComponent, InputComponent, TextareaComponent, RadioComponent, CheckboxComponent]
 	}
 
 	manageElementType(elementType:String) {

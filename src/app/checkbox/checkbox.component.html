@@ -1,0 +1,19 @@
+<label [ngClass]="attributes.wrapperClass" [for]="attributes.id">
+  <input 
+    type="checkbox" 
+    [id]="attributes.id" 
+    [ngClass]="attributes.class" 
+		[required]="attributes.validation?.required.value || null"
+    [name]="attributes.name"
+    [checked]="attributes.checked || null"
+    [(ngModel)]='attributes.value'
+		#model="ngModel"
+  />
+  <span [ngClass]="attributes.labelClass">{{attributes.label}}</span>
+</label>
+
+<div *ngIf="model.errors && (model.dirty || model.touched)">
+    <div [hidden]="!model.errors.required" class="error">
+        {{attributes.validation?.required.error}}
+    </div>
+</div>

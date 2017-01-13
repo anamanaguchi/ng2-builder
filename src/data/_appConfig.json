@@ -1,211 +1,231 @@
 {
-	"appName": "ng2-builder",
-	"lang": "en_EN",
-	"elements": [
-		{
-			"elementType": "InputComponent",
-			"attributes": {
-				"class": [
-					"mdl-textfield__input"
-				],
-				"wrapperClass": [
-					"mdl-textfield",
-					"mdl-js-textfield",
-					"mdl-textfield--floating-label",
-					"mdl-cell",
-					"mdl-cell--12-col"
-				],
-				"labelClass": [
-					"mdl-textfield__label"
-				],
-				"name": "say-hello",
-				"id": "say-hello",
-				"defaultValue": "",
-				"placeholder": "Say hello",
-				"label": "Please say hello",
-				"validation": {
-					"pattern": {
-						"value": "-?[0-9]*(\\.[0-9]+)?",
-						"error": "Please provide a number!"
-					},
-					"required": {
-						"value": true,
-						"error": "This field is required!"
-					}
-				}
-			}
-		},
-		{
-			"elementType": "InputComponent",
-			"attributes": {
-				"class": [
-					"mdl-textfield__input"
-				],
-				"wrapperClass": [
-					"mdl-textfield",
-					"mdl-js-textfield",
-					"mdl-textfield--floating-label",
-					"mdl-cell",
-					"mdl-cell--12-col"
-				],
-				"labelClass": [
-					"mdl-textfield__label"
-				],
-				"name": "say-hello",
-				"id": "say-hello",
-				"defaultValue": "",
-				"placeholder": "Say hello",
-				"label": "Please say hello",
-				"validation": {
-					"pattern": {
-						"value": "-?[0-9]*(\\.[0-9]+)?",
-						"error": "Please provide a number!"
-					},
-					"required": {
-						"value": true,
-						"error": "This field is required!"
-					}
-				}
-			}
-		},
-		{
-			"elementType": "SectionComponent",
-			"attributes": {
-				"class": [
-					"mdl-card__supporting-text"
-				],
-				"wrapperClass": [
-					"section--center",
-					"mdl-grid",
-					"mdl-shadow--2dp",
-					"mdl-cell",
-					"mdl-cell--12-col"
-				],
-				"name": "Personal info section",
-				"id": "personal-info",
-				"label": "Please enter your personal informations! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt laboriosam amet maxime iusto nam facilis possimus quo optio? Dolor, et?",
-				"elements": [
-					{
-						"elementType": "InputComponent",
-						"attributes": {
-							"class": [
-								"mdl-textfield__input"
-							],
-							"wrapperClass": [
-								"mdl-textfield",
-								"mdl-js-textfield",
-								"mdl-textfield--floating-label",
-								"mdl-cell",
-								"mdl-cell--12-col"
-							],
-							"labelClass": [
-								"mdl-textfield__label"
-							],
-							"name": "first-name",
-							"id": "first-name",
-							"placeholder": "First name",
-							"label": "Please enter your first name"
-						}
-					}
-				]
-			}
-		},
-		{
-			"elementType": "SectionComponent",
-			"attributes": {
-				"class": [
-					"mdl-card__supporting-text"
-				],
-				"wrapperClass": [
-					"section--center",
-					"mdl-grid",
-					"mdl-shadow--2dp",
-					"mdl-cell",
-					"mdl-cell--12-col"
-				],
-				"name": "Message Section",
-				"id": "personal-info",
-				"label": "Please enter your personal informations! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt laboriosam amet maxime iusto nam facilis possimus quo optio? Dolor, et?",
-				"elements": [
-					{
-						"elementType": "TextareaComponent",
-						"attributes": {
-							"class": [
-								"mdl-textfield__input"
-							],
-							"wrapperClass": [
-								"mdl-textfield",
-								"mdl-js-textfield",
-								"mdl-textfield--floating-label",
-								"mdl-cell",
-								"mdl-cell--12-col"
-							],
-							"labelClass": [
-								"mdl-textfield__label"
-							],
-							"rows": 2,
-							"name": "msg",
-							"id": "msg",
-							"defaultValue": "",
-							"placeholder": "What's your problem?",
-							"label": "Please type the reason of contact",
-							"validation": {
-								"required": {
-									"value": true,
-									"error": "This field is required!"
-								}
-							}
-						}
-					}
-				]
-			}
-		},
-		{
-			"elementType": "SectionComponent",
-			"attributes": {
-				"class": [
-					"mdl-card__supporting-text"
-				],
-				"wrapperClass": [
-					"section--center",
-					"mdl-grid",
-					"mdl-shadow--2dp",
-					"mdl-cell",
-					"mdl-cell--12-col"
-				],
-				"name": "Radio section",
-				"id": "radio-section",
-				"label": "Please, decide! Et, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt labori",
-				"elements": [
-					{
-						"elementType": "RadioComponent",
-						"attributes": {
-							"wrapperClass": [
-								"mdl-grid"
-							],
-							"name": "msg",
-							"id": "msg",
-							"options": [
-								{
-									"value": "value1",
-									"label": "Option1",
-									"class": ["mdl-radio__button"],
-									"labelClass": ["mdl-radio__label"],
-									"wrapperClass": ["mdl-radio", "mdl-js-radio", "mdl-js-ripple-effect", "mdl-cell", "mdl-cell--3-col"]
-								},
-								{
-									"value": "value2",
-									"label": "Option2",
-									"class": ["mdl-radio__button"],
-									"labelClass": ["mdl-radio__label"],
-									"wrapperClass": ["mdl-radio", "mdl-js-radio", "mdl-js-ripple-effect", "mdl-cell", "mdl-cell--3-col"],
-									"checked": true
-								}
-							]
-						}
-					}
-				]
-			}
-		}
-	]
+    "appName": "ng2-builder",
+    "lang": "en_EN",
+    "elements": [{
+            "elementType": "InputComponent",
+            "attributes": {
+                "class": [
+                    "mdl-textfield__input"
+                ],
+                "wrapperClass": [
+                    "mdl-textfield",
+                    "mdl-js-textfield",
+                    "mdl-textfield--floating-label",
+                    "mdl-cell",
+                    "mdl-cell--12-col"
+                ],
+                "labelClass": [
+                    "mdl-textfield__label"
+                ],
+                "name": "say-hello",
+                "id": "say-hello",
+                "defaultValue": "",
+                "placeholder": "Say hello",
+                "label": "Please say hello",
+                "validation": {
+                    "pattern": {
+                        "value": "-?[0-9]*(\\.[0-9]+)?",
+                        "error": "Please provide a number!"
+                    },
+                    "required": {
+                        "value": true,
+                        "error": "This field is required!"
+                    }
+                }
+            }
+        },
+        {
+            "elementType": "InputComponent",
+            "attributes": {
+                "class": [
+                    "mdl-textfield__input"
+                ],
+                "wrapperClass": [
+                    "mdl-textfield",
+                    "mdl-js-textfield",
+                    "mdl-textfield--floating-label",
+                    "mdl-cell",
+                    "mdl-cell--12-col"
+                ],
+                "labelClass": [
+                    "mdl-textfield__label"
+                ],
+                "name": "say-hello",
+                "id": "say-hello",
+                "defaultValue": "",
+                "placeholder": "Say hello",
+                "label": "Please say hello",
+                "validation": {
+                    "pattern": {
+                        "value": "-?[0-9]*(\\.[0-9]+)?",
+                        "error": "Please provide a number!"
+                    },
+                    "required": {
+                        "value": true,
+                        "error": "This field is required!"
+                    }
+                }
+            }
+        },
+        {
+            "elementType": "SectionComponent",
+            "attributes": {
+                "class": [
+                    "mdl-card__supporting-text"
+                ],
+                "wrapperClass": [
+                    "section--center",
+                    "mdl-grid",
+                    "mdl-shadow--2dp",
+                    "mdl-cell",
+                    "mdl-cell--12-col"
+                ],
+                "name": "Personal info section",
+                "id": "personal-info",
+                "label": "Please enter your personal informations! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt laboriosam amet maxime iusto nam facilis possimus quo optio? Dolor, et?",
+                "elements": [{
+                    "elementType": "InputComponent",
+                    "attributes": {
+                        "class": [
+                            "mdl-textfield__input"
+                        ],
+                        "wrapperClass": [
+                            "mdl-textfield",
+                            "mdl-js-textfield",
+                            "mdl-textfield--floating-label",
+                            "mdl-cell",
+                            "mdl-cell--12-col"
+                        ],
+                        "labelClass": [
+                            "mdl-textfield__label"
+                        ],
+                        "name": "first-name",
+                        "id": "first-name",
+                        "placeholder": "First name",
+                        "label": "Please enter your first name"
+                    }
+                }]
+            }
+        },
+        {
+            "elementType": "SectionComponent",
+            "attributes": {
+                "class": [
+                    "mdl-card__supporting-text"
+                ],
+                "wrapperClass": [
+                    "section--center",
+                    "mdl-grid",
+                    "mdl-shadow--2dp",
+                    "mdl-cell",
+                    "mdl-cell--12-col"
+                ],
+                "name": "Message Section",
+                "id": "personal-info",
+                "label": "Please enter your personal informations! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt laboriosam amet maxime iusto nam facilis possimus quo optio? Dolor, et?",
+                "elements": [{
+                    "elementType": "TextareaComponent",
+                    "attributes": {
+                        "class": [
+                            "mdl-textfield__input"
+                        ],
+                        "wrapperClass": [
+                            "mdl-textfield",
+                            "mdl-js-textfield",
+                            "mdl-textfield--floating-label",
+                            "mdl-cell",
+                            "mdl-cell--12-col"
+                        ],
+                        "labelClass": [
+                            "mdl-textfield__label"
+                        ],
+                        "rows": 2,
+                        "name": "msg",
+                        "id": "msg",
+                        "defaultValue": "",
+                        "placeholder": "What's your problem?",
+                        "label": "Please type the reason of contact",
+                        "validation": {
+                            "required": {
+                                "value": true,
+                                "error": "This field is required!"
+                            }
+                        }
+                    }
+                }]
+            }
+        },
+        {
+            "elementType": "SectionComponent",
+            "attributes": {
+                "class": [
+                    "mdl-card__supporting-text"
+                ],
+                "wrapperClass": [
+                    "section--center",
+                    "mdl-grid",
+                    "mdl-shadow--2dp",
+                    "mdl-cell",
+                    "mdl-cell--12-col"
+                ],
+                "name": "Radio section",
+                "id": "radio-section",
+                "label": "Please, decide! Et, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt labori",
+                "elements": [{
+                        "elementType": "RadioComponent",
+                        "attributes": {
+                            "wrapperClass": [
+                                "mdl-grid"
+                            ],
+                            "name": "msg",
+                            "id": "msg",
+                            "options": [{
+                                    "value": "value1",
+                                    "label": "Option1",
+                                    "class": ["mdl-radio__button"],
+                                    "labelClass": ["mdl-radio__label"],
+                                    "wrapperClass": ["mdl-radio", "mdl-js-radio", "mdl-js-ripple-effect", "mdl-cell", "mdl-cell--3-col"]
+                                },
+                                {
+                                    "value": "value2",
+                                    "label": "Option2",
+                                    "class": ["mdl-radio__button"],
+                                    "labelClass": ["mdl-radio__label"],
+                                    "wrapperClass": ["mdl-radio", "mdl-js-radio", "mdl-js-ripple-effect", "mdl-cell", "mdl-cell--3-col"],
+                                    "checked": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "elementType": "CheckboxComponent",
+                        "attributes": {
+                            "class": [
+                                "mdl-checkbox__input"
+                            ],
+                            "wrapperClass": [
+                                "mdl-checkbox",
+                                "mdl-js-checkbox",
+                                "mdl-cell--12-col"
+                            ],
+                            "labelClass": [
+                                "mdl-checkbox__label"
+                            ],
+                            "name": "terms",
+                            "id": "terms",
+                            "value": "termsAccepted",
+                            "checked": true,
+                            "label": "Accept terms and conditions",
+                            "validation": {
+                                "required": {
+                                    "value": true,
+                                    "error": "This field is required!"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
 }

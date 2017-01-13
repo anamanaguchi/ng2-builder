@@ -9,6 +9,7 @@ import { RadioComponent } from './radio/radio.component';
 import { AppConfigService } from './shared/app-config.service';
 import { ElementService } from './shared/element.service';
 import { DynamicPlaceholderDirective } from './dynamic-placeholder.directive';
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 declare let componentHandler:any;
 
@@ -16,7 +17,7 @@ declare let componentHandler:any;
 	selector: 'ng2-builder',
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss'],
-	entryComponents: [SectionComponent, InputComponent, TextareaComponent, RadioComponent]
+	entryComponents: [SectionComponent, InputComponent, TextareaComponent, RadioComponent, CheckboxComponent]
 })
 export class AppComponent {
 	@ViewChild(DynamicPlaceholderDirective) dynamicPlaceholder:DynamicPlaceholderDirective;
