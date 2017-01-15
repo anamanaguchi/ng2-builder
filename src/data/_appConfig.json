@@ -28,7 +28,7 @@
                         "error": "Please provide a number!"
                     },
                     "required": {
-                        "value": true,
+                        "value": false,
                         "error": "This field is required!"
                     }
                 }
@@ -61,7 +61,7 @@
                         "error": "Please provide a number!"
                     },
                     "required": {
-                        "value": true,
+                        "value": false,
                         "error": "This field is required!"
                     }
                 }
@@ -147,7 +147,7 @@
                         "label": "Please type the reason of contact",
                         "validation": {
                             "required": {
-                                "value": true,
+                                "value": false,
                                 "error": "This field is required!"
                             }
                         }
@@ -213,8 +213,8 @@
                             ],
                             "name": "terms",
                             "id": "terms",
-                            "value": "termsAccepted",
-                            "checked": true,
+                            "value": true,
+                            "checked": false,
                             "label": "Accept terms and conditions",
                             "validation": {
                                 "required": {

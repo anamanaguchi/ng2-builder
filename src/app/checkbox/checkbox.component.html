@@ -3,11 +3,13 @@
     type="checkbox" 
     [id]="attributes.id" 
     [ngClass]="attributes.class" 
-		[required]="attributes.validation?.required.value || null"
+		checkboxRequired="attributes.required.value"
+    required="true"
     [name]="attributes.name"
     [checked]="attributes.checked || null"
-    [(ngModel)]='attributes.value'
+    [ngModel]
 		#model="ngModel"
+    (change)="logObject(model)"
   />
   <span [ngClass]="attributes.labelClass">{{attributes.label}}</span>
 </label>

@@ -13,6 +13,7 @@ import { ElementService } from './shared/element.service';
 import { TextareaComponent } from './textarea/textarea.component';
 import { RadioComponent } from './radio/radio.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
+import { CheckboxRequiredValidator } from './checkbox-required-validator.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
     InputComponent,
     TextareaComponent,
     RadioComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    CheckboxRequiredValidator
   ],
   imports: [
     BrowserModule,

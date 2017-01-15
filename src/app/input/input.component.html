@@ -1,28 +1,28 @@
 <!-- Simple Textfield -->
 
 <div [ngClass]="attributes.wrapperClass">
-	<input
-		type="text"
-		[ngClass]="attributes.class"
-		[pattern]="attributes.validation?.pattern.value "
-		[id]="attributes.id"
-		[placeholder]="attributes.placeholder"
-		[name]="attributes.name"
-		[required]="attributes.validation?.required.value || null"
-		[(ngModel)]="attributes.defaultValue"
-		#model="ngModel"
-	/>
+    <input 
+        type="text" 
+        [ngClass]="attributes.class" 
+        [pattern]="attributes.validation?.pattern.value " 
+        [id]="attributes.id" 
+        [placeholder]="attributes.placeholder" 
+        [name]="attributes.name" 
+        [required]="attributes.validation?.required.value || null" 
+        [(ngModel)]="attributes.defaultValue"
+        #model="ngModel" 
+    />
 
-	<label [ngClass]="attributes.labelClass" [for]="attributes.id">{{attributes.label}}</label>
+    <label [ngClass]="attributes.labelClass" [for]="attributes.id">{{attributes.label}}</label>
 
-	<div *ngIf="model.errors && (model.dirty || model.touched)">
-		<div [hidden]="!model.errors.required" class="error">
-			{{attributes.validation?.required.error}}
-		</div>
+    <div *ngIf="model.errors && (model.dirty || model.touched)">
+        <div [hidden]="!model.errors.required" class="error">
+            {{attributes.validation?.required.error}}
+        </div>
 
-		<div [hidden]="!model.errors.pattern" class="error">
-			{{attributes.validation?.pattern.error}}
-		</div>
-	</div>
+        <div [hidden]="!model.errors.pattern" class="error">
+            {{attributes.validation?.pattern.error}}
+        </div>
+    </div>
 
 </div>
