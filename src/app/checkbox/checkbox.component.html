@@ -1,21 +1,23 @@
 <label [ngClass]="attributes.wrapperClass" [for]="attributes.id">
-  <input
-    type="checkbox"
-    [id]="attributes.id"
-    [ngClass]="attributes.class"
+	<input
+		type="checkbox"
+		[id]="attributes.id"
+		[ngClass]="attributes.class"
 		checkboxRequired="attributes.required.value"
-    required="true"
-    [name]="attributes.name"
-    [checked]="attributes.checked || null"
-    [ngModel]
+		required="true"
+		[name]="attributes.name"
+		[checked]="attributes.checked || null"
+		[ngModel]
 		#model="ngModel"
-    (change)="logObject(model)"
-  />
-  <span [ngClass]="attributes.labelClass">{{attributes.label}}</span>
+		(change)="logObject(model)"
+	/>
+	<span [ngClass]="attributes.labelClass">{{attributes.label}}</span>
+
+	<div *ngIf="model.errors && (model.dirty || model.touched)">
+		<div [hidden]="!model.errors.required" class="error">
+			{{attributes.validation?.required.error}}
+		</div>
+	</div>
 </label>
 
-<div *ngIf="model.errors && (model.dirty || model.touched)">
-    <div [hidden]="!model.errors.required" class="error">
-        {{attributes.validation?.required.error}}
-    </div>
-</div>
+

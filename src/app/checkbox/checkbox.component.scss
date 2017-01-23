@@ -1,0 +1,13 @@
+@import '../../sass/variables';
+
+//we need to overwirte error colors
+.mdl-checkbox {
+	.error {
+		color: $error-color;
+		position: absolute;
+		font-size: 12px;
+		margin-top: 3px;
+		display: block;
+	}
+}
+
