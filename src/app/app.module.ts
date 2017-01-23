@@ -15,6 +15,7 @@ import { RadioComponent } from './radio/radio.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { CheckboxRequiredValidator } from './checkbox-required-validator.directive';
 import { SelectComponent } from './select/select.component';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SelectComponent } from './select/select.component';
     RadioComponent,
     CheckboxComponent,
     CheckboxRequiredValidator,
-    SelectComponent
+			SelectComponent,
+			ButtonComponent
   ],
   imports: [
     BrowserModule,

@@ -311,6 +311,23 @@
 					}
 				]
 			}
+		},
+		{
+			"elementType": "ButtonComponent",
+			"attributes": {
+				"type": "submit",
+				"class": [
+					"mdl-button",
+					"mdl-js-button",
+					"mdl-button--raised",
+					"mdl-js-ripple-effect",
+					"mdl-button--accent",
+					"mdl-cell",
+					"mdl-cell--12-col"
+				],
+				"disabled": false,
+				"label": "Submit form"
+			}
 		}
 	]
 }
