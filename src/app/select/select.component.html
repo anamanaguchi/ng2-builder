@@ -1,0 +1,20 @@
+<div [ngClass]="attributes.wrapperClass">
+	<select
+		[id]="attributes.id"
+		[ngClass]="attributes.class"
+		[name]="attributes.name"
+		[required]="attributes.validation?.required.value || null"
+		[(ngModel)]="attributes.defaultValue"
+		#model="ngModel">
+		<option value=""></option>
+		<option *ngFor="let option of attributes.options" [value]="option.value">{{option.label}}</option>
+	</select>
+	<label [ngClass]="attributes.labelClass" [for]="attributes.id">{{attributes.label}}</label>
+
+	<div *ngIf="model.errors && (model.dirty || model.touched)">
+		<div [hidden]="!model.errors.required" class="error">
+			{{attributes.validation?.required.error}}
+		</div>
+
+	</div>
+</div>

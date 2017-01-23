@@ -1,0 +1,25 @@
+@import '../../sass/variables';
+
+//we need to overwirte error colors
+.mdl-selectfield{
+	float: left;
+	.error{
+		color: $error-color;
+		position: absolute;
+		font-size: 12px;
+		margin-top: 3px;
+		display: block;
+	}
+	&.is-invalid{
+		.mdl-selectfield__select {
+			border-color: $main-color;
+			box-shadow: none;
+		}
+		.mdl-selectfield__label:after{
+			background-color: $main-color;
+		}
+		.mdl-selectfield__label {
+			color: $main-color;
+		}
+	}
+}

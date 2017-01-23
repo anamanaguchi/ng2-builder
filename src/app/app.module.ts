@@ -14,6 +14,7 @@ import { TextareaComponent } from './textarea/textarea.component';
 import { RadioComponent } from './radio/radio.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { CheckboxRequiredValidator } from './checkbox-required-validator.directive';
+import { SelectComponent } from './select/select.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CheckboxRequiredValidator } from './checkbox-required-validator.directi
     TextareaComponent,
     RadioComponent,
     CheckboxComponent,
-    CheckboxRequiredValidator
+    CheckboxRequiredValidator,
+    SelectComponent
   ],
   imports: [
     BrowserModule,

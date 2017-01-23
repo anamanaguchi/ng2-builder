@@ -19,11 +19,13 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
+							"../node_modules/mdl-selectfield/dist/mdl-selectfield.css",
 							"../node_modules/material-design-lite/material.min.css",
         "sass/styles.scss"
       ],
       "scripts": [
-							"../node_modules/material-design-lite/dist/material.min.js"
+							"../node_modules/material-design-lite/dist/material.min.js",
+							"../node_modules/mdl-selectfield/dist/mdl-selectfield.min.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
