@@ -1,0 +1,305 @@
+{
+	"appName": "ng2-builder",
+	"lang": "en_EN",
+	"elements": [
+		{
+			"elementType": "TextContentComponent",
+			"attributes": {
+				"title": "Hello world from text content component!",
+				"content": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut neque ligula, auctor eu orci sed, tincidunt porttitor justo. Pellentesque pretium ligula a erat bibendum sodales. Vivamus iaculis metus a enim lobortis finibus. Etiam massa ligula, sagittis ac tortor sit amet, placerat iaculis nisl. Praesent malesuada erat vitae dui vehicula, non eleifend velit imperdiet. In scelerisque dictum tortor eu pretium. In quam augue, sodales vel ipsum consectetur, fringilla ornare libero.",
+				"class": [
+					"mdl-cell",
+					"mdl-cell--12-col"
+				]
+			}
+		},
+		{
+			"elementType": "SectionComponent",
+			"attributes": {
+				"name": "Input section",
+				"id": "sample-input-field",
+				"label": "This is example of section with single input field.",
+				"class": [
+					"mdl-card__supporting-text"
+				],
+				"wrapperClass": [
+					"section--center",
+					"mdl-grid",
+					"mdl-shadow--2dp",
+					"mdl-cell",
+					"mdl-cell--12-col"
+				],
+				"elements": [
+					{
+						"elementType": "InputComponent",
+						"attributes": {
+							"name": "first-name",
+							"id": "first-name",
+							"placeholder": "First name",
+							"label": "Please enter your first name*",
+							"class": [
+								"mdl-textfield__input"
+							],
+							"wrapperClass": [
+								"mdl-textfield",
+								"mdl-js-textfield",
+								"mdl-textfield--floating-label",
+								"mdl-cell",
+								"mdl-cell--12-col"
+							],
+							"labelClass": [
+								"mdl-textfield__label"
+							],
+							"validation": {
+								"required": {
+									"value": true,
+									"error": "This field is required!"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"elementType": "SectionComponent",
+			"attributes": {
+				"class": [
+					"mdl-card__supporting-text"
+				],
+				"wrapperClass": [
+					"section--center",
+					"mdl-grid",
+					"mdl-shadow--2dp",
+					"mdl-cell",
+					"mdl-cell--12-col"
+				],
+				"name": "Textarea section",
+				"id": "sample-textarea-section",
+				"label": "This is example of section with single text area component.",
+				"elements": [
+					{
+						"elementType": "TextareaComponent",
+						"attributes": {
+							"rows": 2,
+							"name": "msg",
+							"id": "msg",
+							"defaultValue": "",
+							"placeholder": "What's your problem?",
+							"label": "Please type your message*",
+							"class": [
+								"mdl-textfield__input"
+							],
+							"wrapperClass": [
+								"mdl-textfield",
+								"mdl-js-textfield",
+								"mdl-textfield--floating-label",
+								"mdl-cell",
+								"mdl-cell--12-col"
+							],
+							"labelClass": [
+								"mdl-textfield__label"
+							],
+							"validation": {
+								"required": {
+									"value": true,
+									"error": "This field is required!"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"elementType": "SectionComponent",
+			"attributes": {
+				"name": "Radio section",
+				"id": "radio-section",
+				"label": "This is example of section with radio buttons.",
+				"class": [
+					"mdl-card__supporting-text"
+				],
+				"wrapperClass": [
+					"section--center",
+					"mdl-grid",
+					"mdl-shadow--2dp",
+					"mdl-cell",
+					"mdl-cell--12-col"
+				],
+				"elements": [
+					{
+						"elementType": "RadioComponent",
+						"attributes": {
+							"name": "Sex",
+							"id": "sex",
+							"wrapperClass": [
+								"mdl-grid"
+							],
+							"options": [
+								{
+									"value": "male",
+									"label": "Male",
+									"class": [
+										"mdl-radio__button"
+									],
+									"labelClass": [
+										"mdl-radio__label"
+									],
+									"wrapperClass": [
+										"mdl-radio",
+										"mdl-js-radio",
+										"mdl-js-ripple-effect",
+										"mdl-cell",
+										"mdl-cell--3-col"
+									]
+								},
+								{
+									"value": "female",
+									"label": "Female",
+									"class": [
+										"mdl-radio__button"
+									],
+									"labelClass": [
+										"mdl-radio__label"
+									],
+									"wrapperClass": [
+										"mdl-radio",
+										"mdl-js-radio",
+										"mdl-js-ripple-effect",
+										"mdl-cell",
+										"mdl-cell--3-col"
+									],
+									"checked": true
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"elementType": "SectionComponent",
+			"attributes": {
+				"name": "Checkbox section",
+				"id": "checkbox-section",
+				"label": "This is example of section with checkbox component.",
+				"class": [
+					"mdl-card__supporting-text"
+				],
+				"wrapperClass": [
+					"section--center",
+					"mdl-grid",
+					"mdl-shadow--2dp",
+					"mdl-cell",
+					"mdl-cell--12-col"
+				],
+				"elements": [
+					{
+						"elementType": "CheckboxComponent",
+						"attributes": {
+							"name": "terms",
+							"id": "terms",
+							"value": true,
+							"checked": false,
+							"label": "Accept terms and conditions*",
+							"class": [
+								"mdl-checkbox__input"
+							],
+							"wrapperClass": [
+								"mdl-cell",
+								"mdl-checkbox",
+								"mdl-js-checkbox",
+								"mdl-cell--12-col"
+							],
+							"labelClass": [
+								"mdl-checkbox__label"
+							],
+							"validation": {
+								"required": {
+									"value": true,
+									"error": "This field is required!"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"elementType": "SectionComponent",
+			"attributes": {
+				"name": "Select section",
+				"id": "select-section",
+				"label": "This is example of section with select component.",
+				"class": [
+					"mdl-card__supporting-text"
+				],
+				"wrapperClass": [
+					"section--center",
+					"mdl-grid",
+					"mdl-shadow--2dp",
+					"mdl-cell",
+					"mdl-cell--12-col"
+				],
+				"elements": [
+					{
+						"elementType": "SelectComponent",
+						"attributes": {
+							"name": "gender",
+							"id": "gender",
+							"label": "Please, choose an option*",
+							"options": [
+								{
+									"value": "option1",
+									"label": "Option 1"
+								},
+								{
+									"value": "option2",
+									"label": "Option 2",
+									"selected": true
+								}
+							],
+							"wrapperClass": [
+								"mdl-selectfield",
+								"mdl-js-selectfield",
+								"mdl-selectfield--floating-label",
+								"mdl-cell",
+								"mdl-cell--12-col"
+							],
+							"labelClass": [
+								"mdl-selectfield__label"
+							],
+							"class": [
+								"mdl-selectfield__select"
+							],
+							"validation": {
+								"required": {
+									"value": true,
+									"error": "This field is required!"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"elementType": "ButtonComponent",
+			"attributes": {
+				"type": "submit",
+				"disabled": false,
+				"label": "Submit form",
+				"class": [
+					"mdl-button",
+					"mdl-js-button",
+					"mdl-button--raised",
+					"mdl-js-ripple-effect",
+					"mdl-button--accent",
+					"mdl-cell",
+					"mdl-cell--12-col"
+				]
+			}
+		}
+	]
+}
