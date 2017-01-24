@@ -16,6 +16,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { CheckboxRequiredValidator } from './checkbox-required-validator.directive';
 import { SelectComponent } from './select/select.component';
 import { ButtonComponent } from './button/button.component';
+import { TextContentComponent } from './text-content/text-content.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ButtonComponent } from './button/button.component';
     CheckboxComponent,
     CheckboxRequiredValidator,
 			SelectComponent,
-			ButtonComponent
+			ButtonComponent,
+			TextContentComponent
   ],
   imports: [
     BrowserModule,

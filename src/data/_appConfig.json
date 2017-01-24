@@ -3,116 +3,22 @@
 	"lang": "en_EN",
 	"elements": [
 		{
-			"elementType": "InputComponent",
+			"elementType": "TextContentComponent",
 			"attributes": {
+				"title": "Hello world from text content component!",
+				"content": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut neque ligula, auctor eu orci sed, tincidunt porttitor justo. Pellentesque pretium ligula a erat bibendum sodales. Vivamus iaculis metus a enim lobortis finibus. Etiam massa ligula, sagittis ac tortor sit amet, placerat iaculis nisl. Praesent malesuada erat vitae dui vehicula, non eleifend velit imperdiet. In scelerisque dictum tortor eu pretium. In quam augue, sodales vel ipsum consectetur, fringilla ornare libero.",
 				"class": [
-					"mdl-textfield__input"
-				],
-				"wrapperClass": [
-					"mdl-textfield",
-					"mdl-js-textfield",
-					"mdl-textfield--floating-label",
 					"mdl-cell",
 					"mdl-cell--12-col"
-				],
-				"labelClass": [
-					"mdl-textfield__label"
-				],
-				"name": "say-hello",
-				"id": "say-hello",
-				"defaultValue": "",
-				"placeholder": "Say hello",
-				"label": "Please say hello",
-				"validation": {
-					"pattern": {
-						"value": "-?[0-9]*(\\.[0-9]+)?",
-						"error": "Please provide a number!"
-					},
-					"required": {
-						"value": false,
-						"error": "This field is required!"
-					}
-				}
-			}
-		},
-		{
-			"elementType": "InputComponent",
-			"attributes": {
-				"class": [
-					"mdl-textfield__input"
-				],
-				"wrapperClass": [
-					"mdl-textfield",
-					"mdl-js-textfield",
-					"mdl-textfield--floating-label",
-					"mdl-cell",
-					"mdl-cell--12-col"
-				],
-				"labelClass": [
-					"mdl-textfield__label"
-				],
-				"name": "say-hello",
-				"id": "say-hello",
-				"defaultValue": "",
-				"placeholder": "Say hello",
-				"label": "Please say hello",
-				"validation": {
-					"pattern": {
-						"value": "-?[0-9]*(\\.[0-9]+)?",
-						"error": "Please provide a number!"
-					},
-					"required": {
-						"value": false,
-						"error": "This field is required!"
-					}
-				}
-			}
-		},
-		{
-			"elementType": "SectionComponent",
-			"attributes": {
-				"class": [
-					"mdl-card__supporting-text"
-				],
-				"wrapperClass": [
-					"section--center",
-					"mdl-grid",
-					"mdl-shadow--2dp",
-					"mdl-cell",
-					"mdl-cell--12-col"
-				],
-				"name": "Personal info section",
-				"id": "personal-info",
-				"label": "Please enter your personal informations! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt laboriosam amet maxime iusto nam facilis possimus quo optio? Dolor, et?",
-				"elements": [
-					{
-						"elementType": "InputComponent",
-						"attributes": {
-							"class": [
-								"mdl-textfield__input"
-							],
-							"wrapperClass": [
-								"mdl-textfield",
-								"mdl-js-textfield",
-								"mdl-textfield--floating-label",
-								"mdl-cell",
-								"mdl-cell--12-col"
-							],
-							"labelClass": [
-								"mdl-textfield__label"
-							],
-							"name": "first-name",
-							"id": "first-name",
-							"placeholder": "First name",
-							"label": "Please enter your first name"
-						}
-					}
 				]
 			}
 		},
 		{
 			"elementType": "SectionComponent",
 			"attributes": {
+				"name": "Input section",
+				"id": "sample-input-field",
+				"label": "This is example of section with single input field.",
 				"class": [
 					"mdl-card__supporting-text"
 				],
@@ -123,13 +29,14 @@
 					"mdl-cell",
 					"mdl-cell--12-col"
 				],
-				"name": "Message Section",
-				"id": "personal-info",
-				"label": "Please enter your personal informations! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt laboriosam amet maxime iusto nam facilis possimus quo optio? Dolor, et?",
 				"elements": [
 					{
-						"elementType": "TextareaComponent",
+						"elementType": "InputComponent",
 						"attributes": {
+							"name": "first-name",
+							"id": "first-name",
+							"placeholder": "First name",
+							"label": "Please enter your first name*",
 							"class": [
 								"mdl-textfield__input"
 							],
@@ -143,15 +50,9 @@
 							"labelClass": [
 								"mdl-textfield__label"
 							],
-							"rows": 2,
-							"name": "msg",
-							"id": "msg",
-							"defaultValue": "",
-							"placeholder": "What's your problem?",
-							"label": "Please type the reason of contact",
 							"validation": {
 								"required": {
-									"value": false,
+									"value": true,
 									"error": "This field is required!"
 								}
 							}
@@ -173,22 +74,72 @@
 					"mdl-cell",
 					"mdl-cell--12-col"
 				],
+				"name": "Textarea section",
+				"id": "sample-textarea-section",
+				"label": "This is example of section with single text area component.",
+				"elements": [
+					{
+						"elementType": "TextareaComponent",
+						"attributes": {
+							"rows": 2,
+							"name": "msg",
+							"id": "msg",
+							"defaultValue": "",
+							"placeholder": "What's your problem?",
+							"label": "Please type your message*",
+							"class": [
+								"mdl-textfield__input"
+							],
+							"wrapperClass": [
+								"mdl-textfield",
+								"mdl-js-textfield",
+								"mdl-textfield--floating-label",
+								"mdl-cell",
+								"mdl-cell--12-col"
+							],
+							"labelClass": [
+								"mdl-textfield__label"
+							],
+							"validation": {
+								"required": {
+									"value": true,
+									"error": "This field is required!"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"elementType": "SectionComponent",
+			"attributes": {
 				"name": "Radio section",
 				"id": "radio-section",
-				"label": "Please, decide! Et, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt labori",
+				"label": "This is example of section with radio buttons.",
+				"class": [
+					"mdl-card__supporting-text"
+				],
+				"wrapperClass": [
+					"section--center",
+					"mdl-grid",
+					"mdl-shadow--2dp",
+					"mdl-cell",
+					"mdl-cell--12-col"
+				],
 				"elements": [
 					{
 						"elementType": "RadioComponent",
 						"attributes": {
+							"name": "Sex",
+							"id": "sex",
 							"wrapperClass": [
 								"mdl-grid"
 							],
-							"name": "msg",
-							"id": "msg",
 							"options": [
 								{
-									"value": "value1",
-									"label": "Option1",
+									"value": "male",
+									"label": "Male",
 									"class": [
 										"mdl-radio__button"
 									],
@@ -204,8 +155,8 @@
 									]
 								},
 								{
-									"value": "value2",
-									"label": "Option2",
+									"value": "female",
+									"label": "Female",
 									"class": [
 										"mdl-radio__button"
 									],
@@ -223,14 +174,40 @@
 								}
 							]
 						}
-					},
+					}
+				]
+			}
+		},
+		{
+			"elementType": "SectionComponent",
+			"attributes": {
+				"name": "Checkbox section",
+				"id": "checkbox-section",
+				"label": "This is example of section with checkbox component.",
+				"class": [
+					"mdl-card__supporting-text"
+				],
+				"wrapperClass": [
+					"section--center",
+					"mdl-grid",
+					"mdl-shadow--2dp",
+					"mdl-cell",
+					"mdl-cell--12-col"
+				],
+				"elements": [
 					{
 						"elementType": "CheckboxComponent",
 						"attributes": {
+							"name": "terms",
+							"id": "terms",
+							"value": true,
+							"checked": false,
+							"label": "Accept terms and conditions*",
 							"class": [
 								"mdl-checkbox__input"
 							],
 							"wrapperClass": [
+								"mdl-cell",
 								"mdl-checkbox",
 								"mdl-js-checkbox",
 								"mdl-cell--12-col"
@@ -238,11 +215,6 @@
 							"labelClass": [
 								"mdl-checkbox__label"
 							],
-							"name": "terms",
-							"id": "terms",
-							"value": true,
-							"checked": false,
-							"label": "Accept terms and conditions",
 							"validation": {
 								"required": {
 									"value": true,
@@ -257,6 +229,9 @@
 		{
 			"elementType": "SectionComponent",
 			"attributes": {
+				"name": "Select section",
+				"id": "select-section",
+				"label": "This is example of section with select component.",
 				"class": [
 					"mdl-card__supporting-text"
 				],
@@ -267,13 +242,24 @@
 					"mdl-cell",
 					"mdl-cell--12-col"
 				],
-				"name": "Select section",
-				"id": "select-section",
-				"label": "Please, decide! Et, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt labori",
 				"elements": [
 					{
 						"elementType": "SelectComponent",
 						"attributes": {
+							"name": "gender",
+							"id": "gender",
+							"label": "Please, choose an option*",
+							"options": [
+								{
+									"value": "option1",
+									"label": "Option 1"
+								},
+								{
+									"value": "option2",
+									"label": "Option 2",
+									"selected": true
+								}
+							],
 							"wrapperClass": [
 								"mdl-selectfield",
 								"mdl-js-selectfield",
@@ -286,20 +272,6 @@
 							],
 							"class": [
 								"mdl-selectfield__select"
-							],
-							"name": "gender",
-							"id": "gender",
-							"label": "Please, choose a gender",
-							"options": [
-								{
-									"value": "male",
-									"label": "Male"
-								},
-								{
-									"value": "female",
-									"label": "Female",
-									"selected": true
-								}
 							],
 							"validation": {
 								"required": {
@@ -316,6 +288,8 @@
 			"elementType": "ButtonComponent",
 			"attributes": {
 				"type": "submit",
+				"disabled": false,
+				"label": "Submit form",
 				"class": [
 					"mdl-button",
 					"mdl-js-button",
@@ -324,9 +298,7 @@
 					"mdl-button--accent",
 					"mdl-cell",
 					"mdl-cell--12-col"
-				],
-				"disabled": false,
-				"label": "Submit form"
+				]
 			}
 		}
 	]
