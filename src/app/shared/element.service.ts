@@ -12,21 +12,24 @@ import { TextContentComponent } from '../text-content/text-content.component';
 @Injectable()
 export class ElementService {
 
-	private listOfComponents:any[];
+	private listOfComponents:any;
 
 	constructor() {
-		this.listOfComponents = [SectionComponent, InputComponent, TextareaComponent, RadioComponent, CheckboxComponent, SelectComponent, ButtonComponent, TextContentComponent]
+		this.listOfComponents = {
+			"SectionComponent": () => SectionComponent,
+			"InputComponent": () => InputComponent,
+			"TextareaComponent": () => TextareaComponent,
+			"RadioComponent": () => RadioComponent,
+			"CheckboxComponent": () => CheckboxComponent,
+			"SelectComponent": () => SelectComponent,
+			"ButtonComponent": () => ButtonComponent,
+			"TextContentComponent": () => TextContentComponent
+		};
 	}
 
-	manageElementType(elementType:String) {
-		let result = elementType;
-		for (let component of this.listOfComponents) {
-			if (component.name === elementType) {
-				result = component;
-			}
-
-		}
-		return result;
+	manageElementType(elementType:string) {
+		console.log(this.listOfComponents);
+		return this.listOfComponents[elementType]();
 	}
 
 	getElements(configFile) {
