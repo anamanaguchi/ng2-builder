@@ -24,7 +24,7 @@ Component that wraps other components into one section element.
 		"name": "Sample section",
 		"id": "sample-input-field",
 		"label": "This is example of section component.",
-		"wrapperClass": ['class1','class2'],
+		"wrapperClass": ["class1","class2"],
 		"class": ["section-class"],
 		"elements": [{}] 
 	}
