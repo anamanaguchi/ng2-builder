@@ -1,6 +1,9 @@
 # Ng2Builder
 **Simple Angular2 app which generates user form components from JSON file.**
 
+### Demo
+https://anamanaguchi.github.io/ng2-builder/
+
 ### Quick start
 ```shell
 npm install
